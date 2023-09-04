@@ -1,0 +1,41 @@
+<h1 class= "mt-4">Clientes</h1>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active">Cadastro</li>
+</ol>
+<div class="container">
+    <form #UserForm="ngForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>ID:</label>
+                    <input type="text" class="form-control" [(ngModel)]="user.id" name="id" disabled="true">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Nome: *</label>
+                    <input type="text" class="form-control" [(ngModel)]="user.name" name="name">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>E-mail: *</label>
+                    <input type="text" class="form-control" [(ngModel)]="user.email" name="email">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">    
+            <div class="col-md-2"> 
+                <button type="submit" class="btn btn-warning">
+                     Enviar
+                </button>
+            </div>
+            <br><br><br>
+        </div>
+    </form>
+</div>

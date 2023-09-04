@@ -1,0 +1,36 @@
+<h1 class= "mt-4">Clientes</h1>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active">Consulta</li>
+</ol>
+<div class="container"> 
+    <div class="row"> 
+        <div class="col-md-2"> 
+            <button class="btn btn-warning">
+                 Novo
+            </button>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-12"> 
+            <table class="table table-condensed table-hobe">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                    </tr>    
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of users">
+                        <th>{{ user.id }}</th>
+                        <th>{{ user.name }}</th>
+                        <th>{{ user.email }}</th>
+                        <th></th>
+                    </tr>
+                </tbody>
+            </table>    
+        </div>
+        <br><br><br>
+    </div>
+</div>
